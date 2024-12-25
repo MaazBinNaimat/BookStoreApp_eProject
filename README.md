@@ -30,7 +30,7 @@ The **Book Store App** is a mobile platform designed to modernize book shopping 
 
 1. Clone the repository:  
    ```bash
-   git clone <repository-url>
+   git clone <github.com/MaazBinNaimat/BookStoreApp_eProject>
    ```  
 2. Install dependencies:  
    ```bash
