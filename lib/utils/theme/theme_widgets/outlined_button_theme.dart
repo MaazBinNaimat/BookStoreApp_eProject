@@ -1,31 +1,33 @@
 import 'package:flutter/material.dart';
+import '../../constants/colors.dart';
+import '../../constants/sizes.dart';
 
 
 /* -- Light & Dark Outlined Button Themes -- */
 class AppOutlinedButtonTheme {
-  AppOutlinedButtonTheme._(); //To avoid creating instances
+  AppOutlinedButtonTheme._();
 
 
   /* -- Light Theme -- */
   static final lightOutlinedButtonTheme  = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
-      textStyle: const TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      foregroundColor: AppColors.dark,
+      side: const BorderSide(color: AppColors.primary),
+      textStyle: const TextStyle(fontSize: 16, color: AppColors.black, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(vertical: AppSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSizes.buttonRadius)),
     ),
   );
 
   /* -- Dark Theme -- */
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blue),
-      textStyle: const TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      foregroundColor: AppColors.light,
+      side: const BorderSide(color: AppColors.primary),
+      textStyle: const TextStyle(fontSize: 16, color: AppColors.textWhite, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(vertical: AppSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSizes.buttonRadius)),
     ),
   );
 }

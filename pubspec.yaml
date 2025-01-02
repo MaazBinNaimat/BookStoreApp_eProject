@@ -13,17 +13,30 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Packages
+  http: ^1.2.2
+  intl: ^0.20.1
+  logger: ^2.5.0
+  url_launcher: ^6.3.1
+  flutter_native_splash: ^2.4.4
+  smooth_page_indicator: ^1.2.0+3
+
+  # State Management
+  get: ^4.6.6
+  get_storage: ^2.1.1
+
   # icons.
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.8
 
-  #--------------- ./ PACKAGES END ------------------#
+  # Firebase
+  firebase_core: ^3.9.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 flutter:
 
@@ -31,7 +44,8 @@ flutter:
 
   #--------------- LOCAL ASSETS ------------------#
   assets:
-    - assets/images/logos/
+    - assets/logos/
+    - assets/images/on_boarding_images/
 
   #--------------- LOCAL FONTS ------------------#
   fonts:
