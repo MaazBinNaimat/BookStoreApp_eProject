@@ -18,5 +18,4 @@ class AppFormatter {
     }
     return phoneNumber;
   }
-
 }

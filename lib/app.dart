@@ -1,4 +1,4 @@
-import 'package:bookstoreapp_eproject/features/authentication/screens/onboarding.dart';
+import 'package:bookstoreapp_eproject/features/authentication/screens/onBoarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'utils/theme/theme.dart';
