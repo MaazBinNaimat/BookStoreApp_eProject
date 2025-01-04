@@ -3,16 +3,10 @@ import 'package:bookstoreapp_eproject/features/authentication/screens/onBoarding
 import 'package:bookstoreapp_eproject/features/authentication/screens/onBoarding/widgets/onBoardingNextButton.dart';
 import 'package:bookstoreapp_eproject/features/authentication/screens/onBoarding/widgets/onBoarding_skip.dart';
 import 'package:bookstoreapp_eproject/features/authentication/screens/onBoarding/widgets/onboarding_page.dart';
-import 'package:bookstoreapp_eproject/utils/constants/colors.dart';
 import 'package:bookstoreapp_eproject/utils/constants/image_strings.dart';
-import 'package:bookstoreapp_eproject/utils/constants/sizes.dart';
 import 'package:bookstoreapp_eproject/utils/constants/text_strings.dart';
-import 'package:bookstoreapp_eproject/utils/device/device_utility.dart';
-import 'package:bookstoreapp_eproject/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:flutter/material.dart';
 
 class onBoadingScreen extends StatelessWidget {
@@ -51,7 +45,7 @@ class onBoadingScreen extends StatelessWidget {
           /// skip button
           skipButton(),
 
-          /// dot navigations
+          /// dotNavigations
           onBoardingDotNavigation(),
 
           /// circular button

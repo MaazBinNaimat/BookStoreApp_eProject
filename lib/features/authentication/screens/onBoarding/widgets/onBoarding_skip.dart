@@ -15,7 +15,7 @@ class skipButton extends StatelessWidget {
         top: AppDeviceUtils.getAppBarHeight(),
         right: AppSizes.defaultSpace,
         child: TextButton(
-          onPressed: () => OnBoardingController.instance.skipPage,
+          onPressed: () => OnBoardingController.instance.skipPage(0),
           child: Text("Skip"),
         ));
   }

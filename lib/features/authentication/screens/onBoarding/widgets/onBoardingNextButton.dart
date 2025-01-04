@@ -18,7 +18,7 @@ class onBoardingNextButton extends StatelessWidget {
         right: AppSizes.defaultSpace,
         bottom: AppDeviceUtils.getBottomNavigationBarHeight(),
         child: ElevatedButton(
-            onPressed: () => OnBoardingController.instance.nextPage,
+            onPressed: () => OnBoardingController.instance.nextPage(OnBoardingController.instance.currentPageIndex.value),
             style: ElevatedButton.styleFrom(
                 shape: const CircleBorder(),
                 backgroundColor: dark ? AppColors.primary : AppColors.black),
