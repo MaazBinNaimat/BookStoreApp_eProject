@@ -1,4 +1,7 @@
+import 'package:bookstoreapp_eproject/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -74,7 +77,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const SignupScreen()),
                     child: Text(AppTexts.createAccount))),
           ],
         ),
