@@ -5,33 +5,27 @@ import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
 class SignupForm extends StatelessWidget {
-  const SignupForm({
-    super.key,
-  });
-
+  const SignupForm({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Form(
       child: Column(
         children: [
+          // First Name and Last Name in a Row
           Row(
             children: [
               Expanded(
                 child: TextFormField(
-                  expands: false,
                   decoration: const InputDecoration(
                     labelText: AppTexts.firstName,
                     prefixIcon: Icon(Iconsax.user),
                   ),
                 ),
               ),
-              const SizedBox(
-                width: AppSizes.spaceBtwInputFields,
-              ),
+              const SizedBox(width: AppSizes.spaceBtwInputFields),
               Expanded(
                 child: TextFormField(
-                  expands: false,
                   decoration: const InputDecoration(
                     labelText: AppTexts.lastName,
                     prefixIcon: Icon(Iconsax.user),
@@ -40,83 +34,60 @@ class SignupForm extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(
-            height: AppSizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: AppSizes.spaceBtwInputFields),
 
-          /// UserName
-          Expanded(
-            child: TextFormField(
-              expands: false,
-              decoration: const InputDecoration(
-                labelText: AppTexts.username,
-                prefixIcon: Icon(Iconsax.user_edit),
-              ),
+          // Username
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: AppTexts.username,
+              prefixIcon: Icon(Iconsax.user_edit),
             ),
           ),
+          const SizedBox(height: AppSizes.spaceBtwInputFields),
 
-          const SizedBox(
-            height: AppSizes.spaceBtwInputFields,
-          ),
-
-          /// Email
-          Expanded(
-            child: TextFormField(
-              expands: false,
-              decoration: const InputDecoration(
-                labelText: AppTexts.email,
-                prefixIcon: Icon(Iconsax.direct),
-              ),
+          // Email
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: AppTexts.email,
+              prefixIcon: Icon(Iconsax.direct),
             ),
           ),
+          const SizedBox(height: AppSizes.spaceBtwInputFields),
 
-          const SizedBox(
-            height: AppSizes.spaceBtwInputFields,
-          ),
-
-          /// Phone Number
-          Expanded(
-            child: TextFormField(
-              expands: false,
-              decoration: const InputDecoration(
-                labelText: AppTexts.phoneNo,
-                prefixIcon: Icon(Iconsax.call),
-              ),
+          // Phone Number
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: AppTexts.phoneNo,
+              prefixIcon: Icon(Iconsax.call),
             ),
           ),
+          const SizedBox(height: AppSizes.spaceBtwInputFields),
 
-          const SizedBox(
-            height: AppSizes.spaceBtwInputFields,
-          ),
-
-          /// Password
-          Expanded(
-            child: TextFormField(
-              expands: false,
-              decoration: const InputDecoration(
-                labelText: AppTexts.password,
-                prefixIcon: Icon(Iconsax.password_check),
-                suffixIcon: Icon(Iconsax.eye_slash),
-              ),
+          // Password
+          TextFormField(
+            obscureText: true,
+            decoration: const InputDecoration(
+              labelText: AppTexts.password,
+              prefixIcon: Icon(Iconsax.password_check),
+              suffixIcon: Icon(Iconsax.eye_slash),
             ),
           ),
+          const SizedBox(height: AppSizes.spaceBtwSections),
 
-          const SizedBox(
-            height: AppSizes.spaceBtwSections,
-          ),
-
-          /// Terms&Conditions & CheckBox
+          // Terms & Conditions Checkbox
           const TermsNConditionCheckBox(),
+          const SizedBox(height: AppSizes.spaceBtwSections),
 
-          const SizedBox(height: AppSizes.spaceBtwSections,),
-          /// SignUp Button
+          // SignUp Button
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(onPressed: () {}, child: const Text(AppTexts.createAccount)),
-          )
+            child: ElevatedButton(
+              onPressed: () {},
+              child: const Text(AppTexts.createAccount),
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
