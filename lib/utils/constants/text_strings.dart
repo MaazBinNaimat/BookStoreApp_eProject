@@ -8,7 +8,7 @@ class AppTexts {
   static const String done = "Done";
   static const String submit = "Submit";
   static const String appName = "Book-Store";
-  static const String tContinue = "Continue";
+  static const String AppContinue = "Continue";
 
 
   // -- OnBoarding Texts

@@ -1,3 +1,4 @@
+import 'package:bookstoreapp_eproject/features/authentication/screens/password_configuration/forget_pass.dart';
 import 'package:bookstoreapp_eproject/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -55,7 +56,7 @@ class LoginForm extends StatelessWidget {
 
                 /// forgetPassword
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const ForgetPass()),
                     child: const Text(AppTexts.forgetPassword)),
               ],
             ),
