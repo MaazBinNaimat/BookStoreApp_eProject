@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
@@ -68,7 +69,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(AppTexts.signIn))),
+                    onPressed: () => Get.to(() => const NavigationMenu()), child: Text(AppTexts.signIn))),
 
             SizedBox(
               height: AppSizes.spaceBtwItems,
