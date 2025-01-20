@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Expanded(
                 flex: 2,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 36, horizontal: 24),
+                  padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,

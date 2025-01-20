@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
             height: 300,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('logo/watchhublogo2.JPG'),
+                image: AssetImage('logo/BS1.png'),
               ),
             ),
           ),

@@ -18,9 +18,9 @@ class _HomepageScreenState extends State<HomepageScreen> {
   int cartItemCount = 5; // Example cart item count
 
   List imagesList = [
-    {"id": 1, "image_path": "images/banners/watchbanner1.jpg"},
-    {"id": 2, "image_path": "images/banners/watchbanner2.jpeg"},
-    {"id": 3, "image_path": "images/banners/watchbanner3.jpg"},
+    {"id": 1, "image_path": "images/banners/bookBanner.jpeg"},
+    {"id": 2, "image_path": "images/banners/bookBanner2.jpeg"},
+    {"id": 3, "image_path": "images/banners/bookBanner3.jpeg"},
   ];
 
   final CarouselSliderController carouselController = CarouselSliderController();
